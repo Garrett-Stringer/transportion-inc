@@ -1,0 +1,14 @@
+@import "main.css";
+@import "custom.css";
+#ngy2p {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}
+
+@media only screen and (max-wodth: 600px) {
+  #ngy2p {
+    width: 100%;
+    padding: 0px;
+  }
+}

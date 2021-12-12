@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="R2FycmV0dCBTdHJpbmdlciAxMC8zMS8yMDIxIDU6NTBwbQ=="
+    />
+    <title>Garrett Stringer's Website</title>
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons CDN-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
+      integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- FancyBox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!-- FancyBox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- left sidebar -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          Table of Contents
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <a href="gallery.html">Gallery</a> <br />
+          <a href="form.html">Apply Now!</a> <br />
+          <a href="schedule.html">Schedule</a> <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom bar -->
+    <!-- <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+          Table of Contents
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body small"></div>
+    </div> -->
+
+    <div class="container-fluid top-logo text-center">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="material-icons-outlined material-icon">
+            <!-- <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasBottom"
+              role="button"
+              aria-controls="offcanvasBottom"
+              >info</a
+              > -->
+          </span>
+          <span class="material-icons-outlined material-icon">
+            <a class="sidebar-icon" href="gallery.html">camera</a>
+          </span>
+          <span class="material-icons-outlined material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+              >menu</a
+            >
+          </span>
+        </div>
+        <div class="col-12 col-md-6">
+          Transportation Inc.
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#About"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a> 
+                </li>
+              </ul>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link disabled">Disabled</a> 
+            </li> -->
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success btn-search" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/carousel/1.jpg"
+            class="d-block w-100"
+            alt="A large yacht in the ocean"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Yacht</h5>
+            <p>A large party yacht.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/carousel/2.jpg"
+            class="d-block w-100"
+            alt="An old Chevrolet in Cuba"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Classic Car</h5>
+            <p>An old classic Chevy</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/carousel/4.jpg"
+            class="d-block w-100"
+            alt="A passenger plane about to land"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Plane</h5>
+            <p>A passenger plane landing.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="ratio ratio-16x9 carousel-alternate">
+      <iframe
+        src="https://www.youtube.com/embed/FaLCQo8NJFA?rel=0"
+        title="YouTube video"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Font Awesome -->
+    <div class="container-fluid fa-row text-center">
+      <div class="row">
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://en.wikipedia.org/wiki/Train" target="_blank"
+            ><i class="fas fa-train fa-row-icon"></i
+          ></a>
+          <br />
+          Trains
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://en.wikipedia.org/wiki/Helicopter" target="_blank"
+            ><i class="fas fa-helicopter fa-row-icon"></i
+          ></a>
+          <br />
+          Helicopters
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://en.wikipedia.org/wiki/Plane" target="_blank"
+            ><i class="fas fa-plane fa-row-icon"></i
+          ></a>
+          <br />
+          Planes
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://en.wikipedia.org/wiki/Car" target="_blank"
+            ><i class="fas fa-car fa-row-icon"></i
+          ></a>
+          <br />
+          Cars
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://en.wikipedia.org/wiki/Ship" target="_blank"
+            ><i class="fas fa-ship fa-row-icon"></i
+          ></a>
+          <br />
+          Ships
+        </div>
+        <div
+          class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
+        >
+          <a href="https://en.wikipedia.org/wiki/Truck" target="_blank"
+            ><i class="fas fa-truck fa-row-icon"></i
+          ></a>
+          <br />
+          Trucks
+        </div>
+      </div>
+    </div>
+
+    <!-- dummy paragraph -->
+    <div class="container volunteer-div" id="About">
+      <div class="row">
+        <div class="col">
+          <img src="images/General/1.jpg" class="img-responsive volunteer-img"
+          alt=""Aloha" written in the sand" />
+          <h2>About</h2>
+          Transportation has been a very important part of our human lives and
+          our evolution as a society grows bigger. Transportation started off as
+          just walking then we learned to domesticate animals and rode on them.
+          Since then we have developed ground, water, air and space travel.
+          Cars, trucks, bikes, trains, etc all help us traverse the ground
+          faster. There are several types of boats for different purposes. RHIBs
+          (rigid hulled inflatable boats) are good for lightweight fast travel.
+          There are also gunboats which are generally armored and armed
+          providing offense and defense for the passengers. aircraft carriers
+          essentially act as floating airports and barges can hold many
+          containers for the trasnporrtation of goods across the sea. Not to
+          mention speedboats which are used specifically for fast travel and
+          yachts which are used as floating mansions.
+          <div>
+            <a href="form.html" class="btn btn-outline-primary btn-volunteer"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/Fancybox/Originals/1.jpg">
+            <img
+              data-aos="fade-up"
+              class="img-responsive img-fancybox"
+              src="images/Fancybox/Resized/1.jpg"
+              alt="A bunch of people wuth laptops"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/Fancybox/Originals/2.jpg">
+            <img
+              data-aos="fade-up"
+              class="img-responsive img-fancybox"
+              src="images/Fancybox/Resized/2.jpg"
+              alt="People with notebooks"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/Fancybox/Originals/3.jpg">
+            <img
+              data-aos="fade-up"
+              class="img-responsive img-fancybox"
+              src="images/Fancybox/Resized/3.jpg"
+              alt="a bunch of people sitting at a table"
+            />
+          </a>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 gallery-box"
+        >
+          <a data-fancybox href="images/Fancybox/Originals/4.jpg">
+            <img
+              data-aos="fade-up"
+              class="img-responsive img-fancybox"
+              src="images/Fancybox/Resized/4.jpg"
+              alt="people stacking their hands"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- dummy paragraph -->
+    <div class="container contact-div" id="contact">
+      <div class="row">
+        <div class="col">
+          <img
+            src="images/General/2.jpg"
+            class="img-responsive contact-img"
+            alt="a person holding a cell phone"
+          />
+          <h2>About Transportation</h2>
+          Land and water travel is almost as old as humans themselves however
+          air travel is relatively recent and space travel and very recent. Air
+          travel started off with hot air balloons and hangliders which,
+          although they were slow, they were impressive in their time. We then
+          progressed far enough to combine propellers, engines and hangliders
+          together to make what is known as a prop plane. Now we have large
+          passenger aircraft, aircraft that are super fast, aircraft that can
+          fire missiles, and aircraft that can avoid radar detection. Space
+          travel is newest form of travel. This is a highly advance form of
+          travel that allows us to escape the atmosphere of earth and visit
+          other celestial bodies. There are not a large variety of passenger
+          spacecraft like there is for other forms of transportation considering
+          space travel is fairly new.
+          <div>
+            <a href="#FooterInfo" class="btn btn-outline-primary btn-contact"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Staff -->
+    <div class="container staff text-center">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="fade-up"
+            src="images/Staff/Resized/1.jpg"
+            class="cropped"
+            alt="a person on a zoom call"
+          />
+          <br />
+          <blockquote>
+            Good things might come to those who wait, but not for those who wait
+            too late.
+            <cite>Bill Withers</cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="fade-up"
+            src="images/Staff/Resized/2.jpg"
+            class="cropped"
+            alt="a person at a laptop"
+          />
+          <br />
+          <blockquote>
+            You can't understand a city without using its public transportation
+            system
+            <cite>John Doe</cite>
+          </blockquote>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <img
+            data-aos="fade-up"
+            src="images/Staff/Resized/3.jpg"
+            class="cropped"
+            alt="a person sitting at their computer"
+          />
+          <br />
+          <blockquote>
+            Why do they call it rush hour if nothing moves?
+            <cite>Jane Doe</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer-row text-center" id="FooterInfo">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <a href="https://en.wikipedia.org/wiki/Privacy_Policy"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <a href="schedule.html">Schedule</a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <a href="mailto:Garrett.Stringer18@buc.blinn.edu">Support</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Social Media -->
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-social-media"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-social-media"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-social-media"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

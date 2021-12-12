@@ -1,0 +1,147 @@
+@import "main.css";
+@import "custom.css";
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-alternate {
+  display: none;
+}
+@media (max-width: 600px) {
+  .carousel {
+    display: none;
+  }
+
+  .carousel-alternate {
+    display: block;
+    width: 100%;
+  }
+}
+.fa-row {
+  background-color: var(--accentColor);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #aaaaff;
+  font-weight: bold;
+}
+.fas {
+  font-size: 50px;
+  color: #ff05a0;
+}
+.fa-train,
+.fa-helicopter {
+  color: #0000ff;
+}
+.fa-plane,
+.fa-car {
+  color: #cc00cc;
+}
+.fa-ship,
+.fa-truck {
+  color: #ff69b4;
+}
+.fas:hover {
+  transform: scale(1.1);
+}
+.volunteer-div {
+  position: relative;
+  background-color: var(--dominantColor);
+  padding: 15px;
+  height: auto;
+  min-height: 450px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.volunteer-img {
+  position: relative;
+  float: left;
+  padding-right: 25px;
+}
+@media (max-width: 600px) {
+  .volunteer-img {
+    width: 100%;
+    float: none;
+    padding: 0px;
+  }
+}
+.btn-volunteer {
+  color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+  position: relative;
+  float: left;
+  clear: both;
+  margin-top: 25px;
+}
+.btn-volunteer:hover {
+  background-color: var(--accentColor);
+  border-color: var(--accentColor);
+}
+
+.gallery-box {
+  margin-top: 2px;
+}
+.img-fancybox {
+  width: 200px;
+  height: auto;
+}
+@media screen and (max-width: 575px) {
+  .img-fancybox {
+    width: 350px;
+    height: auto;
+  }
+}
+
+/*
+.footer-row {
+  background-color: #cccccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ff05a0;
+  font-weight: bold;
+}*/
+.contact-div {
+  position: relative;
+  /* background-color: var(--secondaryColor); */
+  padding: 15px;
+  height: auto;
+  min-height: 450px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.contact-img {
+  position: relative;
+  float: right;
+  padding-left: 25px;
+}
+@media (max-width: 600px) {
+  .contact-img {
+    width: 100%;
+    float: none;
+    padding: 0px;
+  }
+}
+.btn-contact {
+  color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+  position: relative;
+  float: right;
+  clear: both;
+  margin-top: 25px;
+}
+.btn-contact:hover {
+  background-color: var(--accentColor);
+  border-color: var(--accentColor);
+}
+/*
+.fa-social-media,
+fa-social-media:hover {
+  font-size: 25px;
+  padding-left: 12px;
+  padding-right: 12px;
+}*/
+.cropped {
+  width: 200px;
+  height: 200px;
+  clip-path: circle(50% at 50% 50%);
+}

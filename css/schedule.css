@@ -1,0 +1,41 @@
+@import "main.css";
+@import "custom.css";
+
+.wrapper-schedule {
+  width: 100%;
+  margin: auto;
+  background-color: var(--dominantColor);
+  padding: 25px;
+  margin-bottom: 0;
+}
+.wrapper-content {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+}
+.content-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+  margin: auto;
+  text-align: center;
+}
+.content-table thead tr {
+  background-color: var(--accentColor);
+  color: #ffffff;
+  font-weight: bold;
+}
+.content-table th,
+.content-table td {
+  padding: 12px;
+}
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(even) {
+  background-color: var(--secondaryColor);
+}
+/* .content-table tbody tr:last-of-type {
+  border-bottom: 3px solid #bbbbbb;
+} */

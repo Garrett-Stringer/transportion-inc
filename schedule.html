@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="R2FycmV0dCBTdHJpbmdlciAxMS0xMC0yMDIxIDU6MzFwbQ=="
+    />
+    <title>Schedule</title>
+
+    <!-- jQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Fonts CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icons CDN-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css"
+      integrity="sha512-Q0DfJ+I5cbH4Wm20NlPZ/fENHil7k3ZgzI9b71LfQAB1IlM8Gt7aO7eOPX2QzYT+4fZaF6u1kSfZAHczl4r/9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- FancyBox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!-- FancyBox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <link rel="stylesheet" href="css/schedule.css" />
+  </head>
+
+  <body>
+    <!-- left sidebar -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <a href="gallery.html">Gallery</a> <br />
+          <a href="form.html">Apply Now!</a> <br />
+          <a href="index.html">Home</a> <br />
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom bar -->
+    <!-- <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+          Offcanvas bottom
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body small">
+        ...
+      </div>
+    </div> -->
+
+    <div class="container-fluid top-logo text-center">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span class="material-icons-outlined material-icon">
+            <!-- <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasBottom"
+              role="button"
+              aria-controls="offcanvasBottom"
+              >info</a
+              > -->
+          </span>
+          <span class="material-icons-outlined material-icon">
+            <a class="sidebar-icon" href="gallery.html">camera</a>
+          </span>
+          <span class="material-icons-outlined material-icon md-60">
+            <a
+              class="sidebar-icon"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+              >menu</a
+            >
+          </span>
+        </div>
+        <div class="col-12 col-md-6">
+          Transportation Inc.
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html#About"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact Us</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a> 
+                </li>
+              </ul>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link disabled">Disabled</a> 
+            </li> -->
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper-body">
+      <div class="wrapper-schedule">
+        <div class="wrapper-content">
+          <h1>Schedule</h1>
+          <p>
+            Schedule changes may happen due to weather
+          </p>
+
+          <h2>Do you want to apply?</h2>
+          <p>Why you should apply.</p>
+
+          <!-- unordered list-->
+          <ul>
+            <li>Free Lunches</li>
+            <li>Do Your Part</li>
+            <li>Make a Difference</li>
+
+            <ul>
+              <li>Contribute to your community</li>
+              <li>Increase your skill</li>
+              <li>Increase Awareness</li>
+            </ul>
+          </ul>
+        </div>
+        <!-- this is a table -->
+        <div class"table-responsive">
+        <table class="content-table table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 am</td>
+              <td>History of Cargo Trains</td>
+              <td>History of Cars</td>
+              <td>History of Bikes</td>
+              <td>History of Canoes</td>
+              <td>History of Military Boats</td>
+            </tr>
+            <tr>
+              <td>11:00 am</td>
+              <td>History of Early Flight</td>
+              <td>History of Supercars</td>
+              <td>History of Armored Vehicles</td>
+              <td>History of Container Ships</td>
+              <td>History of Fighter Planes</td>
+            </tr>
+            <tr>
+              <td>2:00 pm</td>
+              <td>History of Passenger Trains</td>
+              <td>History of Spy Cars</td>
+              <td>History of Passenger Planes</td>
+              <td>History of Speedboats</td>
+              <td>History of Religious Vehicles</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <div class="wrapper-content">
+          <h2>How to Apply</h2>
+          <!-- Ordered List-->
+          <ol type="1">
+            <li>Go to Application Form</li>
+            <li>Verify Qualification</li>
+            <li>Fill Out and Submit Form</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid footer-row text-center" id="FooterInfo">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <a href="https://en.wikipedia.org/wiki/Privacy_Policy"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <a href="schedule.html">Schedule</a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <a href="mailto:Garrett.Stringer18@buc.blinn.edu">Support</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Social Media -->
+      <div class="row text-center">
+        <div class="col-12">
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fab fa-facebook fa-social-media"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter fa-social-media"></i
+          ></a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram fa-social-media"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
